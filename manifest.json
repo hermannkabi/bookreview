@@ -1,6 +1,6 @@
 {
-    "name": "BookReview by Hermann",
-    "short_name": "BookReview",
+    "name": "bookreview",
+    "short_name": "bookreview",
     "start_url": "./",
     "display": "standalone",
     "background_color": "#0175C2",
