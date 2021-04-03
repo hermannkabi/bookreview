@@ -26,6 +26,9 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
+  <meta name="google-signin-client_id" content="264652740894-qjpiqtsvir29qgpf05tjn40fvsb5rbrv.apps.googleusercontent.com">
+
+
   <title>BookReview by Hermann</title>
   <link rel="manifest" href="manifest.json">
 </head>
@@ -38,7 +41,7 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=612259005');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=3808765857');
       });
     }
   </script>
@@ -50,6 +53,7 @@
        https://firebase.google.com/docs/web/setup#available-libraries -->
   <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
 
   <script>
     // Your web app's Firebase configuration
