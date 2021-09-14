@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans&display=swap" rel="stylesheet">
+    <title>Loading book</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <script type="module" src="index.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="/css/master.css">
+    <link id="favicon" rel="icon" type="image/png" href="/images/favicon.png"/>
+
+  </head>
+  <body>
+
+
+    <img class="center-img" src="/images/book_loading_animation.gif" alt="Loading...">
+
+    <div class="review-element hidden container-fluid">
+
+      <div class="row">
+
+        <div class="col-lg-7">
+          <div class="wrapper" style="overflow:hidden">
+            <div class="image-div" style="float:left;">
+              <img class="review-img" src="/images/white.jpg" alt="Book Thumbnail" height="388px" width="256px">
+            </div>
+            <div style="margin-left:15px;overflow:hidden">
+              <h1 class="subtitle book-title" style="font-size: 3rem;margin-top:75px;">-</h1>
+              <p class="book-description">-</p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col">
+          <div style="float:right; border:1px solid; margin-top: 90px;" class="review-img">
+            <h3 class="title" style="font-size:2rem; margin:9px 40px 20px 9px;">Book Details</h3>
+            <div style="margin: 3px 12px;" class="">
+              <h5 class="title-basic book-detail-pages" style="font-size:2.5rem; margin-bottom:0">-</h5>
+              <p style="font-size:17px;margin-top:0; font-family:'Alegreya Sans'">PAGES</p>
+            </div>
+            <div style="margin: 3px 12px;" class="">
+              <h5 class="title-basic book-detail-genre" style="font-size:2.5rem; margin-bottom:0">-</h5>
+              <p style="font-size:17px;margin-top:0; font-family:'Alegreya Sans'">CATEGORY</p>
+            </div>
+            <div style="margin: 3px 12px;" class="">
+              <h5 class="title-basic book-detail-isbn" style="font-size:2.5rem; margin-bottom:0">-</h5>
+              <p style="font-size:17px;margin-top:0; font-family:'Alegreya Sans'">ISBN</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- <div>
+          <p style="float: left;">  <img class="review-img" src="/images/white.jpg" alt="Book Thumbnail" height="388px" width="256px"></p>
+          <h1 class="subtitle" style="font-size: 3rem;float:left;margin-top:75px;">A Book Tile Goes Here</h1>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   -->
+
+       <div style="width:50%;" class="my-review">
+       </div>
+
+
+       <div style="margin: 0 25px; width:50%" class="">
+         <button class="edit-review-btn" type="button" name="button">Edit Review</button>
+       </div>
+
+
+      </div>
+
+    </div>
+
+
+
+    <div class="review-element-mobile hidden container-fluid">
+
+      <div class="row">
+
+        <div class="image-div" style="text-align:center;">
+          <img class="review-img" src="/images/white.jpg" alt="Book Thumbnail" height="388px" width="256px">
+        </div>
+        <div style="text-align:center;">
+          <h1 class="subtitle book-title" style="font-size: 3rem;">-</h1>
+          <p class="book-description">-</p>
+        </div>
+
+
+
+
+        <div class="col">
+          <div style="border:1px solid; margin-top: 90px;" class="review-img">
+            <h3 class="title" style="font-size:2rem; margin:9px 40px 20px 9px;">Book Details</h3>
+            <div style="margin: 3px 12px;" class="">
+              <h5 class="title-basic book-detail-pages" style="font-size:2.5rem; margin-bottom:0">-</h5>
+              <p style="font-size:17px;margin-top:0; font-family:'Alegreya Sans'">PAGES</p>
+            </div>
+            <div style="margin: 3px 12px;" class="">
+              <h5 class="title-basic book-detail-genre" style="font-size:2.5rem; margin-bottom:0">-</h5>
+              <p style="font-size:17px;margin-top:0; font-family:'Alegreya Sans'">CATEGORY</p>
+            </div>
+            <div style="margin: 3px 12px;" class="">
+              <h5 class="title-basic book-detail-isbn" style="font-size:2.5rem; margin-bottom:0">-</h5>
+              <p style="font-size:17px;margin-top:0; font-family:'Alegreya Sans'">ISBN</p>
+            </div>
+          </div>
+
+        </div>
+
+      <!-- <div>
+        <p style="float: left;">  <img class="review-img" src="/images/white.jpg" alt="Book Thumbnail" height="388px" width="256px"></p>
+        <h1 class="subtitle" style="font-size: 3rem;float:left;margin-top:75px;">A Book Tile Goes Here</h1>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+ -->
+
+     <div class="my-review"></div>
+
+     <div style="margin: 0 25px; " class="">
+       <button class="edit-review-btn" type="button" name="button">Edit Review</button>
+     </div>
+
+
+    </div>
+
+  </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js" charset="utf-8"></script>
+  </body>
+</html>

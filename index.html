@@ -1,77 +1,41 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css">
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    Fore more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-  -->
-  <base href="/books/">
-
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="BookReview by Hermann">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="BookReview by Hermann">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <meta name="google-signin-client_id" content="264652740894-qjpiqtsvir29qgpf05tjn40fvsb5rbrv.apps.googleusercontent.com">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 
 
-  <title>BookReview by Hermann</title>
-  <link rel="manifest" href="manifest.json">
-</head>
-<body>
+    <link id="favicon" rel="icon" type="image/png" href="/images/favicon.png"/>
+    <title>Book Review</title>
+
+    <script type="module" src="js/index.js" charset="utf-8"></script>
+
+  </head>
+  <body>
+    <!-- Have to use p tag, not h1, because of some weird text glitches happening with the Alegreya font -->
+    <!-- Specifically, the upper case B was rendering as outlined -->
+    <!-- Very ugly -->
+    <!-- Nevermind, it just fixed itself (11.09.2021) -->
+    <h1 class="title">My Books</h1>
+    <!-- <h2 >Delete</h2> -->
+    <input id="searchbox" type="text" name="name" placeholder="Search">
+    <div class="container">
+      <div class="row booklist"></div>
 
 
-  <!-- This script installs service_worker.js to provide PWA functionality to
-       application. For more information, see:
-       https://developers.google.com/web/fundamentals/primers/service-workers -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=2960066099');
-      });
-    }
-  </script>
 
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
 
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-       https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
+      </div>
+    </div>
 
-  <script>
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    var firebaseConfig = {
-      apiKey: "AIzaSyC_CbM2Pk-ljl8D3fkFqgqmjvBoofNWCZY",
-      authDomain: "bookreviewbyhermann.firebaseapp.com",
-      projectId: "bookreviewbyhermann",
-      storageBucket: "bookreviewbyhermann.appspot.com",
-      messagingSenderId: "264652740894",
-      appId: "1:264652740894:web:8e22008420c99d3d6f510f",
-      measurementId: "G-8N183XL44G"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
-  </script>
 
-  <script src="main.dart.js" type="application/javascript"></script>
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  </body>
 </html>
