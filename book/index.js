@@ -24,7 +24,6 @@ function getParameter(parameterName){
 function setData(imageSrc, bookTitle, description, pages, categories, isbn, review){
   var converter = new showdown.Converter();
   var mdToHtml = converter.makeHtml(review);
-  $("#favicon").attr("href", imageSrc);
   $(".image-div .review-img").attr("src", imageSrc);
   $("title").text(bookTitle);
   $(".center-img").hide();
